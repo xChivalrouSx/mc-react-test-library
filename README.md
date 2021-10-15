@@ -17,17 +17,17 @@ import { Button } from "mc-react-test-library";
 import React from "react";
 
 const App = () => {
-	return (
-		<Button
-			text="Click Me!..."
-			type="hacker"
-			buttonAttributes={{
-				onClick: () => {
-					alert("clicked...");
-				},
-			}}
-		/>
-	);
+  return (
+    <Button
+      text="Click Me!..."
+      type="hacker"
+      buttonAttributes={{
+        onClick: () => {
+          alert("clicked...");
+        },
+      }}
+    />
+  );
 };
 
 export default App;
