@@ -13,16 +13,24 @@ npm install --save mc-react-test-library
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import { Button } from "mc-react-test-library";
+import React from "react";
 
-import MyComponent from 'mc-react-test-library'
-import 'mc-react-test-library/dist/index.css'
+const App = () => {
+	return (
+		<Button
+			text="Click Me!..."
+			type="hacker"
+			buttonAttributes={{
+				onClick: () => {
+					alert("clicked...");
+				},
+			}}
+		/>
+	);
+};
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
-}
+export default App;
 ```
 
 ## License
